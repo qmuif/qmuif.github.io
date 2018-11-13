@@ -822,7 +822,7 @@ footer p {
         display: none;
         height: 100%;
     }
-    #sakura{
+    #sakura, #sakuraContainer{
         display: none;
     }
     #menu p {
