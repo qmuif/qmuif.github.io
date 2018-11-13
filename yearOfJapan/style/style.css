@@ -822,7 +822,9 @@ footer p {
         display: none;
         height: 100%;
     }
-
+    #sakura{
+        display: none;
+    }
     #menu p {
         margin: 5px;
         text-transform: uppercase;
