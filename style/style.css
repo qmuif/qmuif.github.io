@@ -1,0 +1,970 @@
+@font-face {
+    font-family: 'Poiret One';
+    src: url(fonts/PoiretOne-Regular.ttf);
+}
+
+/*Стили элементов предзагрузки*/
+#preloadShow {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    min-height: 1000px;
+    background: #f1efe3 no-repeat;
+}
+
+/*Примерный центр*/
+.center {
+    background: transparent;
+    color: #F6FFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Элементы прелоадера*/
+/*Красный круг*/
+.dotjp-0 {
+    position: absolute;
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    background: red;
+    border-radius: 50%;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: jump-jump 1.7s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+    animation: jump-jump 1.7s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+/*Белый флаг Японии*/
+.dotjp-1 {
+    position: absolute;
+    width: 170px;
+    z-index: 4;
+    height: 100px;
+    background: white;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: jump-jump-0 1.7s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+    animation: jump-jump-0 1.7s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+/*Красная полоска РФ*/
+.dotrf-2 {
+    position: absolute;
+    z-index: 3;
+    width: 170px;
+    height: 30px;
+    margin-top: 35px;
+    background: red;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: jump-jump-3 1.7s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+    animation: jump-jump-3 1.7s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+/*Синяя полоска РФ*/
+.dotrf-3 {
+    position: absolute;
+    z-index: 2;
+    width: 170px;
+    height: 60px;
+    margin-top: 20px;
+    background: blue;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: jump-jump-2 1.7s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+    animation: jump-jump-2 1.7s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+/*Белая полоска РФ*/
+.dotrf-4 {
+    position: absolute;
+    z-index: 1;
+    width: 170px;
+    height: 90px;
+    margin-top: 0px;
+    background: white;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation: jump-jump-1 1.7s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+    animation: jump-jump-1 1.7s cubic-bezier(0.21, 0.98, 0.6, 0.99) infinite alternate;
+}
+
+/*Анимация элементов предзагрузки*/
+@-webkit-keyframes jump-jump {
+
+    0%,
+    70% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes jump-jump {
+
+    0%,
+    70% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes jump-jump-0 {
+
+    0%,
+    50% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes jump-jump-0 {
+
+    0%,
+    50% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes jump-jump-1 {
+
+    0%,
+    40% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes jump-jump-1 {
+
+    0%,
+    40% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes jump-jump-2 {
+
+    0%,
+    30% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes jump-jump-2 {
+
+    0%,
+    30% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-webkit-keyframes jump-jump-3 {
+
+    0%,
+    10% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes jump-jump-3 {
+
+    0%,
+    10% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+/*Стили основных элементов сайта*/
+body {
+    font-weight: bold;
+    font-size: 120%;
+    font-family: 'Poiret One', cursive;
+    padding: 0;
+    margin: 0;
+}
+
+/*Верхнее меню*/
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+    background: #d7d5c9;
+}
+
+#menu p {
+    margin: 0px;
+    font-size: 130%;
+    display: block;
+    color: #6f2913;
+}
+
+#menu ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#menu li {
+    list-style-type: none;
+}
+
+#menu a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+}
+
+#menu a:hover {
+    color: #9f6351;
+}
+
+#menu a:active {
+    color: black;
+}
+
+/*Эфект параллакса*/
+.parallax {
+    min-height: 100vh;
+    position: relative;
+    opacity: 0.65;
+    background: no-repeat fixed center;
+    background-size: cover;
+}
+
+/*Центр параллакса*/
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+/*Надписи на параллаксе*/
+.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 180%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/*Фоновое изображение*/
+.parallaxOne {
+    background-image: url('../images/house.svg');
+}
+
+/*Блок падающей сакуры*/
+.sakuraContainer, .snowContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/*Сакура*/
+#sakura {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/sakyra.png");
+    -webkit-animation: drop 20s linear infinite;
+    -moz-animation: drop 20s linear infinite;
+    -ms-animation: drop 20s linear infinite;
+    animation: drop 20s linear infinite;
+}
+
+/*Падение сакуры*/
+@keyframes drop {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+@-moz-keyframes drop {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+@-webkit-keyframes drop {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+@-ms-keyframes drop {
+    0% {
+        background-position: 0 0, 0 0, 0 0;
+    }
+
+    100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+}
+
+/*Слайды с текстом*/
+.moduleSlide {
+    display: flex;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    transition: flex .4s ease;
+    position: relative;
+}
+
+.section p {
+    margin: 40px;
+    height: 40vh;
+    font-size: 120%;
+    text-align: center;
+    opacity: 0;
+    transition: 2s;
+}
+
+.section .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: background-color .8s ease;
+}
+
+.section .content {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section:hover {
+    flex: 2;
+}
+
+.section:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.section:hover p {
+    opacity: 1;
+}
+
+#one {
+    background-image: url('../images/slideHouse.svg');
+}
+
+#two {
+    background-image: url('../images/slideArch.svg');
+}
+
+.moduleSlide h1 {
+    font-weight: 100;
+    z-index: 2;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/*Фоновое изображение*/
+.parallaxTwo {
+    background-image: url('../images/geisha.svg');
+}
+
+/*Блоки с текстом*/
+.pageText {
+    color: #777;
+    background-color: white;
+    padding: 50px 80px;
+    text-align: justify;
+}
+
+/*Фоновое изображение*/
+.parallaxThree {
+    background-image: url('../images/moscow.svg');
+}
+
+/*снег*/
+#snow {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/15825154.png"), url("../images/21791255.png"), url("../images/89961317.png");
+    -webkit-animation: drop 20s linear infinite;
+    -moz-animation: drop 20s linear infinite;
+    -ms-animation: drop 20s linear infinite;
+    animation: drop 20s linear infinite;
+}
+
+/*Видео блок*/
+.moduleVideo {
+    overflow: hidden;
+    z-index: -100;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top: 45%;
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*Текст на видео*/
+.videoOverlay {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+}
+
+.videoOverlay h4 {
+    text-align: center;
+    color: #fff;
+    font-size: 300%;
+    margin-top: 20%;
+}
+
+/*Блок анимаций*/
+.moduleAnimation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #f1efe3;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 80vh;
+    background: #f1efe3;
+    margin-right: 40px;
+}
+
+.left p {
+    width: 70%;
+}
+
+.right {
+    width: 100%;
+    background: #f1efe3;
+    height: 80vh;
+}
+
+.moduleAnimationObject {
+    width: 50%;
+    transition: all 5s ease-out;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #f1efe3;
+    height: 80vh;
+}
+
+.mountain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 30vh;
+    background: #f1efe3;
+    box-shadow: 0 -20px 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+#mountainOne {
+    z-index: 2;
+    transition: all 1s ease-out;
+    transform: translate(0px, 275px);
+    padding: 20px;
+}
+
+#mountainOne::after {
+    content: '';
+    left: 20px;
+    bottom: 0;
+    /* Положение треугольника */
+    border: 100px solid transparent;
+    border-bottom: 140px solid #4B555C;
+    /* Прозрачные границы */
+}
+
+#mountainTwo {
+    z-index: 2;
+    transition: all 1.5s ease-out;
+    transform: translate(375px, 0px);
+    padding: 20px;
+
+}
+
+#mountainTwo::after {
+    margin-left: -150px;
+    content: '';
+    left: 40px;
+    bottom: 0;
+    /* Положение треугольника */
+    border: 120px solid transparent;
+    border-bottom: 160px solid #58636B;
+    /* Прозрачные границы */
+}
+
+#mountainThree {
+    z-index: 2;
+    transition: all 2s ease-out;
+    transform: translate(475px, 0px);
+}
+
+#mountainThree::after {
+    margin-left: -200px;
+    content: '';
+    left: 60px;
+    bottom: 0;
+    /* Положение треугольника */
+    border: 140px solid transparent;
+    border-bottom: 200px solid #626E78;
+    /* Прозрачные границы */
+}
+
+#mountainFour {
+    z-index: 2;
+    transition: all 3s ease-out;
+    transform: translate(575px, 0px);
+    padding: 20px;
+}
+
+#mountainFour::after {
+    margin-left: -200px;
+    content: '';
+    left: 80px;
+    bottom: 0;
+    /* Положение треугольника */
+    border: 160px solid transparent;
+    border-bottom: 200px solid #566069;
+    /* Прозрачные границы */
+}
+
+#mountainFive {
+    z-index: 2;
+    transition: all 4s ease-out;
+    transform: translate(675px, 0px);
+    padding: 20px;
+}
+
+#mountainFive::after {
+    margin-left: -200px;
+    content: '';
+    left: 100px;
+    bottom: 0;
+    /* Положение треугольника */
+    border: 180px solid transparent;
+    border-bottom: 220px solid #495259;
+    /* Прозрачные границы */
+}
+
+#sun {
+    transition: all 7s ease-out;
+    transform: translate(0px, 100px);
+    height: 100px;
+    width: 100px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    background: #eff866;
+    box-shadow: 0 0 150px #eff866;
+    z-index: 0;
+}
+
+#lake {
+    box-shadow: 0 20px 20px 20px rgba(0, 0, 0, 0.5);
+    width: 800px;
+    height: 100px;
+    background: white;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 50px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotate3d(2, 1, 1, 20deg);
+}
+
+.lake {
+    z-index: 1;
+    width: 800px;
+    height: 100px;
+    background: white;
+    -moz-border-radius: 100px / 50px;
+    -webkit-border-radius: 100px / 50px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotate3d(2, 1, 2, 11deg);
+    margin-top: -50px;
+}
+
+.lake::before {
+    content: '';
+    position: absolute;
+    background: #04ACFF;
+    width: 100%;
+    bottom: 0;
+    animation: wipe 5s cubic-bezier(.2, .6, .8, .4) forwards;
+}
+
+/*Заполнение водой*/
+@keyframes wipe {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+/*Фоновое изображение*/
+.parallaxFour {
+    background-image: url('../images/forest.svg');
+}
+
+/*Фоновое изображение*/
+.parallaxFive {
+    background-image: url('../images/handshake.svg');
+}
+
+/*Фон вывода*/
+.captionLast {
+    padding: 15px;
+    position: absolute;
+    left: 15%;
+    top: 40%;
+    width: 70%;
+    text-align: center;
+    background: #111;
+}
+
+/*Текст вывода*/
+.borderLast {
+    color: #fff;
+    padding: 18px;
+    font-size: 180%;
+}
+
+/*Подвал*/
+footer {
+    background: #f1efe3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h4 {
+    margin-bottom: 5px;
+}
+
+footer button {
+    color: blue;
+    margin-bottom: 20px;
+    background: #f1efe3;
+    border: none;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/*Блок дополнительной информации*/
+#developerInfo {
+    transition: all 1s ease-out;
+    background: #f1efe3;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    opacity: 0;
+}
+
+@media (max-width: 1400px) {
+    .moduleAnimation {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container h1 {
+        margin-top: 500px;
+        transition: 2s;
+    }
+
+    .section:hover .content h1 {
+        margin-top: 50px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .moduleAnimationObject {
+        display: none;
+        height: 100%;
+    }
+
+    #menu p {
+        margin: 5px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        cursor: pointer;
+    }
+
+    #menu p:hover {
+        color: #bf8e63;
+    }
+
+    #menu ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    .left {
+        width: 100%;
+        margin-right: 0px;
+        height: 100%;
+    }
+
+    .caption {
+        padding: 15px;
+        position: absolute;
+        left: 15%;
+        top: 40%;
+        width: 70%;
+        text-align: center;
+        background: #111;
+    }
+
+    .border {
+        background: none;
+        color: #fff;
+        padding: 18px;
+        font-size: 180%;
+    }
+
+    .borderLast {
+        font-size: 120%;
+    }
+
+    .videoOverlay h4 {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 800px) {
+    .videoOverlay h4 {
+        font-size: 140%;
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 700px) {
+    .border {
+        font-size: 140%;
+    }
+
+    .moduleVideo {
+        height: 50px;
+    }
+
+    .section p {
+        margin: 30px;
+        height: 545px;
+    }
+
+    .container {
+        height: 1000px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section p {
+        font-size: 115%;
+        height: 500px;
+    }
+
+    .onlyDesktop {
+        display: none;
+    }
+
+    .captionLast {
+        top: 10%;
+    }
+}
+
+@media (max-width: 500px) {
+    .pageText {
+        padding: 45px 10px;
+    }
+
+    .section p {
+        font-size: 100%;
+        margin: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    .moduleVideo {
+        height: 35px;
+    }
+
+    .videoOverlay h4 {
+        font-size: 120%;
+        margin-top: 10%;
+    }
+
+    .section p {
+        font-size: 95%;
+    }
+
+    .border {
+        font-size: 120%;
+    }
+}
+
+/*@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {*/
+/*!* IE10 IE11 не тянут svg фон, по этому поставим png*!*/
+/*#marketing {*/
+/*background-image: url('../images/japanOne.png');*/
+/*}*/
+
+/*#technology {*/
+/*background-image: url('../images/japanTwo.png');*/
+/*}*/
+
+/*#advertising {*/
+/*background-image: url('../images/japanThree.png');*/
+/*}*/
+
+/*.parallaxOne {*/
+/*background-image: url('../images/japanFour.png');*/
+/*}*/
+
+/*.parrallaxTwo {*/
+/*background-image: url('../images/japanFive_2.png');*/
+/*}*/
+
+/*.parallaxZero {*/
+/*background-image: url('../images/japanZero.png');*/
+/*}*/
+/*}*/
