@@ -5,9 +5,15 @@
 
 /*Стили элементов предзагрузки*/
 #preloadShow {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: fixed;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     z-index: 3;
     width: 100%;
@@ -20,8 +26,14 @@
 .center {
     background: transparent;
     color: #F6FFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -98,7 +110,6 @@
 
 /*Анимация элементов предзагрузки*/
 @-webkit-keyframes jump-jump {
-
     0%,
     70% {
         -webkit-transform: scale(0);
@@ -248,9 +259,18 @@ body {
 
 /*Верхнее меню*/
 #menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
     align-items: baseline;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     background: #d7d5c9;
 }
@@ -265,9 +285,18 @@ body {
 #menu ul {
     padding: 0px;
     margin: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
 }
 
@@ -340,23 +369,11 @@ body {
     height: 100%;
     background-image: url("../images/sakyra.png");
     -webkit-animation: drop 20s linear infinite;
-    -moz-animation: drop 20s linear infinite;
-    -ms-animation: drop 20s linear infinite;
     animation: drop 20s linear infinite;
 }
 
 /*Падение сакуры*/
 @keyframes drop {
-    0% {
-        background-position: 0 0, 0 0, 0 0;
-    }
-
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-    }
-}
-
-@-moz-keyframes drop {
     0% {
         background-position: 0 0, 0 0, 0 0;
     }
@@ -376,38 +393,44 @@ body {
     }
 }
 
-@-ms-keyframes drop {
-    0% {
-        background-position: 0 0, 0 0, 0 0;
-    }
-
-    100% {
-        background-position: 500px 1000px, 400px 400px, 300px 300px;
-    }
-}
-
 /*Слайды с текстом*/
 .moduleSlide {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
 }
 
 .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 100vh;
 }
 
 .section {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
     flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     height: 100vh;
     overflow: hidden;
     background-size: cover;
     background-position: center;
     color: #fff;
+    -webkit-transition: -webkit-box-flex .4s ease;
+    transition: -webkit-box-flex .4s ease;
+    -o-transition: flex .4s ease;
     transition: flex .4s ease;
+    transition: flex .4s ease, -webkit-box-flex .4s ease, -ms-flex .4s ease;
     position: relative;
 }
 
@@ -417,6 +440,8 @@ body {
     font-size: 120%;
     text-align: center;
     opacity: 0;
+    -webkit-transition: 2s;
+    -o-transition: 2s;
     transition: 2s;
 }
 
@@ -425,18 +450,31 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
+    -webkit-transition: background-color .8s ease;
+    -o-transition: background-color .8s ease;
     transition: background-color .8s ease;
 }
 
 .section .content {
     z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .section:hover {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
     flex: 2;
 }
 
@@ -488,8 +526,6 @@ body {
     height: 100%;
     background-image: url("../images/15825154.png"), url("../images/21791255.png"), url("../images/89961317.png");
     -webkit-animation: drop 20s linear infinite;
-    -moz-animation: drop 20s linear infinite;
-    -ms-animation: drop 20s linear infinite;
     animation: drop 20s linear infinite;
 }
 
@@ -531,19 +567,39 @@ body {
 
 /*Блок анимаций*/
 .moduleAnimation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background: #f1efe3;
 }
 
 .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     width: 50%;
     height: 80vh;
@@ -563,29 +619,52 @@ body {
 
 .moduleAnimationObject {
     width: 50%;
+    -webkit-transition: all 5s ease-out;
+    -o-transition: all 5s ease-out;
     transition: all 5s ease-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     background: #f1efe3;
     height: 80vh;
 }
 
 .mountain {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     justify-content: space-around;
     height: 30vh;
     background: #f1efe3;
+    -webkit-box-shadow: 0 -20px 20px 20px rgba(0, 0, 0, 0.5);
     box-shadow: 0 -20px 20px 20px rgba(0, 0, 0, 0.5);
 }
 
 #mountainOne {
     z-index: 2;
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
     transition: all 1s ease-out;
+    -webkit-transform: translate(0px, 275px);
+    -ms-transform: translate(0px, 275px);
     transform: translate(0px, 275px);
     padding: 20px;
 }
@@ -602,7 +681,11 @@ body {
 
 #mountainTwo {
     z-index: 2;
+    -webkit-transition: all 1.5s ease-out;
+    -o-transition: all 1.5s ease-out;
     transition: all 1.5s ease-out;
+    -webkit-transform: translate(375px, 0px);
+    -ms-transform: translate(375px, 0px);
     transform: translate(375px, 0px);
     padding: 20px;
 
@@ -621,7 +704,11 @@ body {
 
 #mountainThree {
     z-index: 2;
+    -webkit-transition: all 2s ease-out;
+    -o-transition: all 2s ease-out;
     transition: all 2s ease-out;
+    -webkit-transform: translate(475px, 0px);
+    -ms-transform: translate(475px, 0px);
     transform: translate(475px, 0px);
 }
 
@@ -638,7 +725,11 @@ body {
 
 #mountainFour {
     z-index: 2;
+    -webkit-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
     transition: all 3s ease-out;
+    -webkit-transform: translate(575px, 0px);
+    -ms-transform: translate(575px, 0px);
     transform: translate(575px, 0px);
     padding: 20px;
 }
@@ -656,7 +747,11 @@ body {
 
 #mountainFive {
     z-index: 2;
+    -webkit-transition: all 4s ease-out;
+    -o-transition: all 4s ease-out;
     transition: all 4s ease-out;
+    -webkit-transform: translate(675px, 0px);
+    -ms-transform: translate(675px, 0px);
     transform: translate(675px, 0px);
     padding: 20px;
 }
@@ -673,19 +768,23 @@ body {
 }
 
 #sun {
+    -webkit-transition: all 7s ease-out;
+    -o-transition: all 7s ease-out;
     transition: all 7s ease-out;
+    -webkit-transform: translate(0px, 100px);
+    -ms-transform: translate(0px, 100px);
     transform: translate(0px, 100px);
     height: 100px;
     width: 100px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
     border-radius: 50px;
     background: #eff866;
+    -webkit-box-shadow: 0 0 150px #eff866;
     box-shadow: 0 0 150px #eff866;
     z-index: 0;
 }
 
 #lake {
+    -webkit-box-shadow: 0 20px 20px 20px rgba(0, 0, 0, 0.5);
     box-shadow: 0 20px 20px 20px rgba(0, 0, 0, 0.5);
     width: 800px;
     height: 100px;
@@ -695,6 +794,7 @@ body {
     position: relative;
     border-radius: 50%;
     overflow: hidden;
+    -webkit-transform: rotate3d(2, 1, 1, 20deg);
     transform: rotate3d(2, 1, 1, 20deg);
 }
 
@@ -708,6 +808,7 @@ body {
     position: relative;
     border-radius: 50%;
     overflow: hidden;
+    -webkit-transform: rotate3d(2, 1, 2, 11deg);
     transform: rotate3d(2, 1, 2, 11deg);
     margin-top: -50px;
 }
@@ -718,10 +819,21 @@ body {
     background: #04ACFF;
     width: 100%;
     bottom: 0;
+    -webkit-animation: wipe 5s cubic-bezier(.2, .6, .8, .4) forwards;
     animation: wipe 5s cubic-bezier(.2, .6, .8, .4) forwards;
 }
 
 /*Заполнение водой*/
+@-webkit-keyframes wipe {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
 @keyframes wipe {
     0% {
         height: 0;
@@ -763,9 +875,18 @@ body {
 /*Подвал*/
 footer {
     background: #f1efe3;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -786,10 +907,19 @@ footer p {
 
 /*Блок дополнительной информации*/
 #developerInfo {
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
     transition: all 1s ease-out;
     background: #f1efe3;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     display: none;
     opacity: 0;
@@ -797,6 +927,9 @@ footer p {
 
 @media (max-width: 1400px) {
     .moduleAnimation {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 }
@@ -804,11 +937,16 @@ footer p {
 @media (max-width: 900px) {
 
     .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
     .container h1 {
         margin-top: 500px;
+        -webkit-transition: 2s;
+        -o-transition: 2s;
         transition: 2s;
     }
 
@@ -822,9 +960,11 @@ footer p {
         display: none;
         height: 100%;
     }
-    #sakura, #sakuraContainer{
+
+    #sakura, #sakuraContainer {
         display: none;
     }
+
     #menu p {
         margin: 5px;
         text-transform: uppercase;
@@ -837,6 +977,9 @@ footer p {
     }
 
     #menu ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         display: none;
     }
@@ -944,29 +1087,92 @@ footer p {
     }
 }
 
-/*@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {*/
-/*!* IE10 IE11 не тянут svg фон, по этому поставим png*!*/
-/*#marketing {*/
-/*background-image: url('../images/japanOne.png');*/
-/*}*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #preloadShow{
+        display: none;
+    }
+    #menu{
+        display: none !important;
+    }
+    /* IE10 IE11 не тянут svg фон, по этому поставим png*/
+    #one {
+        background-image: url('../images/IE/slideHouse.png');
+    }
 
-/*#technology {*/
-/*background-image: url('../images/japanTwo.png');*/
-/*}*/
+    #two {
+        background-image: url('../images/IE/slideArch.png');
+    }
 
-/*#advertising {*/
-/*background-image: url('../images/japanThree.png');*/
-/*}*/
+    .parallaxOne {
+        background-image: url('../images/IE/house.png');
+    }
 
-/*.parallaxOne {*/
-/*background-image: url('../images/japanFour.png');*/
-/*}*/
+    .parallaxTwo {
+        background-image: url('../images/IE/geisha.png');
+    }
 
-/*.parrallaxTwo {*/
-/*background-image: url('../images/japanFive_2.png');*/
-/*}*/
+    .parallaxThree {
+        background-image: url('../images/IE/moscow.png');
+    }
 
-/*.parallaxZero {*/
-/*background-image: url('../images/japanZero.png');*/
-/*}*/
-/*}*/
+    .parallaxFour {
+        background-image: url('../images/IE/forest.png');
+    }
+
+    .parallaxFour {
+        background-image: url('../images/IE/handshake.png');
+    }
+
+    .moduleAnimation {
+        flex-direction: column;
+        -ms-flex-direction: column;
+    }
+
+    .left {
+        height: 60vh;
+        width: 90vw;
+    }
+
+    .left h3{
+        width: 90vh;
+    }
+
+    .moduleAnimationObject {
+        height: 75vh;;
+    }
+
+    .section p {
+        width: 95vw;
+    }
+
+    .content:hover {
+        background: #111111;
+        opacity: 0.7;
+    }
+
+    #two h1 {
+        color: black;
+    }
+
+    #two:hover h1 {
+        color: white;
+    }
+
+    .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .container h1 {
+        margin-top: 500px;
+        -webkit-transition: 2s;
+        -o-transition: 2s;
+        transition: 2s;
+    }
+
+    .section:hover .content h1 {
+        margin-top: 50px !important;
+    }
+}
