@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <!-- Кодировка страницы и маштаб страницы 1 к 1 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Стили -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Анимации в веб-разработке</title>
+</head>
+
+<body>
+
+<!-- Шапка сайта -->
+<div>
+    <div class="header-dark">
+        <div class="snowContainer">
+            <div id="snow"></div>
+        </div>
+        <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+            <div class="container"><a class="navbar-brand" href="#">Анимации в веб-разработке</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span
+                        class="sr-only"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                     id="navcol-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown"
+                               aria-expanded="false" href="#">Меню</a>
+                            <div class="dropdown-menu" role="menu">
+                                <a class="dropdown-item" role="presentation" href="#">Первый элемент</a>
+                                <a class="dropdown-item" role="presentation" href="#">Второй элемент</a>
+                                <a class="dropdown-item" role="presentation" href="#">Третий элемент</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container hero">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h1 class="text-center">Революция web-разработки уже здесь.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Слайдер -->
+<div class="simple-slider">
+    <div class="swiper-container">
+        <div class="swiper-wrapper" style="height:100vh;">
+            <div class="swiper-slide"
+                 style="background-image:url(&quot;assets/img/material-design-oficjalnie-wyglad-google-android.jpg&quot;);height:100vh;">
+                <h3>Слайдер позволяет размещать больше информации, используя меньше места</h3>
+            </div>
+            <div class="swiper-slide"
+                 style="background-image:url(&quot;assets/img/mdb-main.jpg&quot;);height:100vh;">
+                <h3>Текст на слайдах воспринимается лучше с картинками</h3>
+            </div>
+            <div class="swiper-slide"
+                 style="background-image:url(&quot;assets/img/mk-pro-banner.jpg&quot;);height:100vh;">
+                <h3>Слайды это круто!</h3>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+
+<!-- Параллакс фон -->
+<div class="d-flex justify-content-center align-items-center" data-bs-parallax-bg="true"
+     style="height:100vh;background-image:url(&quot;assets/img/mountain_bg.jpg&quot;);background-position:center;background-size:cover;">
+    <h1 style="color:rgb(255,255,255);">Параллакс эффект</h1>
+</div>
+
+<!-- Галерея -->
+<div class="photo-gallery">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">Галерея</h2>
+            <p class="text-center">Упрощает использование изображений</p>
+        </div>
+        <div class="row photos">
+            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg" data-lightbox="photos"><img
+                    class="img-fluid" src="assets/img/desk.jpg"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg" data-lightbox="photos"><img
+                    class="img-fluid" src="assets/img/building.jpg"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg" data-lightbox="photos"><img
+                    class="img-fluid" src="assets/img/loft.jpg"></a></div>
+            <div class="col-sm-6 col-md-4 col-lg-3 item"><a
+                    href="assets/img/mandariny_citrusovye_serdechko_43737_1280x720.jpg" data-lightbox="photos"><img
+                    class="img-fluid" src="assets/img/mandariny_citrusovye_serdechko_43737_1280x720.jpg"></a></div>
+        </div>
+    </div>
+</div>
+
+<!-- Карта -->
+<div class="map-clean">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">Интерактивная карта</h2>
+            <p class="text-center">Позвоялет пользователю понять где находится ваш адресс, по ближайшим знакомым ему точкам</p>
+        </div>
+    </div>
+    <iframe allowfullscreen="" frameborder="0" width="100%" height="450"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5507.892591709575!2d48.03779446472985!3d46.35061024576997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf64b0e902dcb816e!2z0J7QsdC70LDRgdGC0L3QvtC5INGG0LXQvdGC0YAg0YDQsNC30LLQuNGC0LjRjyDRgtCy0L7RgNGH0LXRgdGC0LLQsCDQtNC10YLQtdC5INC4INGO0L3QvtGI0LXRgdGC0LLQsA!5e0!3m2!1sru!2sru!4v1544875989557">
+    </iframe>
+</div>
+
+<div class="starBox">
+    <div class="night">
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+        <div class="shooting_star"></div>
+    </div>
+    <h1>Анимации это просто! <br> Удачи вам в ваших начинаниях!</h1>
+</div>
+
+<!-- Библиотеки javascript -->
+<!-- jQuery -->
+<script src="assets/js/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/bs-animation.js"></script>
+<!-- Gallery -->
+<script src="assets/js/lightbox.min.js"></script>
+<!-- Slider -->
+<script src="assets/js/swiper.jquery.min.js"></script>
+<script src="assets/js/Simple-Slider.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>
