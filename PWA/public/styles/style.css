@@ -1,0 +1,41 @@
+.card {
+    margin: 15px;
+}
+
+.container {
+    text-align: center;
+}
+
+.nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6131300;
+}
+
+.brand-logo img {
+    padding-top: 20px;
+    width: 70%;
+}
+
+div.message {
+    font-family: 'Courier New', monospace;
+    background: black;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    cursor: pointer;
+    margin: 1em 0;
+}
+
+.usernameInput-enter-active, .usernameInput-leave-active {
+    transition: all 1s;
+
+}
+
+.usernameInput-enter, .usernameInput-leave-to /* .fade-leave-active до версии 2.1.8 */
+{
+    transform: translateX(-100vw);
+    opacity: 0;
+}
