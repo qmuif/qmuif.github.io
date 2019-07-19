@@ -6,4 +6,4 @@
 
 [Анимации в веб-разработке](https://qmuif.github.io/animation)
 
-[PWA](https://qmuif.github.io/PWA/public)
+
