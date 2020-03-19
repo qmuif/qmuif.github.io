@@ -1,0 +1,883 @@
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+main {
+    width: 100%;
+}
+
+/* region Обложка */
+.first_screen {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.first_screen .left_lane {
+    position: fixed;
+    height: 100vh;
+    max-width: 80px;
+    background: #DADDDE;
+}
+
+.first_screen .left_lane .logo {
+    width: 40px;
+    height: 40px;
+    margin: 40px 20px;
+}
+
+.first_screen .left_lane .left_lane_bottom_icon {
+    margin-bottom: 8px;
+}
+
+.first_screen .left_lane .icon {
+    width: 24px;
+    height: 24px;
+    margin: 12px 28px;
+    opacity: 0.7;
+    transition: opacity .5s;
+}
+
+.first_screen .left_lane .icon:hover {
+    opacity: 1;
+}
+
+.first_screen .center_line {
+    margin-left: 80px;
+    width: 100%;
+    background: #282D2E url("../images/zwalls.ru-16005.png") no-repeat;
+    background-size: 700px 100%;
+}
+
+.first_screen .center_line header {
+    margin: 50px 200px 100px 60px;
+}
+
+.first_screen .center_line header a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0 30px;
+    letter-spacing: 0;
+    opacity: 0.8;
+}
+
+.first_screen .center_line .header_menu a:first-child {
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0 30px 0 0;
+}
+
+.first_screen .center_line header .header_contact a {
+    font-weight: bold !important;
+}
+
+.first_screen .center_line .center_line_content {
+    margin: 50px 230px 100px 60px;
+}
+
+.first_screen .center_line .center_line_content .tagline {
+    margin-top: 100px;
+}
+
+.first_screen .center_line .center_line_content h1 {
+    letter-spacing: 0;
+    line-height: 1.6;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 30px 0;
+}
+
+.first_screen .center_line .bottom_tagline {
+    color: #707070;
+}
+
+.first_screen .center_line .bottom_tagline h2 {
+    font-size: 18px;
+    color: #707070;
+    margin: 0 20px;
+}
+
+.first_screen .center_line .bottom_tagline h2:first-child {
+    color: #707070;
+    margin: 0 20px 0 0;
+}
+
+.first_screen .center_line .feedback h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.first_screen .center_line .feedback input {
+    font-family: Lato, sans-serif;
+    border: none;
+    padding: 25px 35px;
+    text-align: center;
+    color: #5A5A5A;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.first_screen .center_line .feedback a {
+    font-size: 14px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.first_screen .center_line .feedback button {
+    border: none;
+    font-size: 18px;
+    padding: 30px 60px;
+    color: #FFFFFF;
+    background: #0196FF;
+}
+
+@media (max-width: 1350px) {
+    .first_screen .center_line header {
+        margin: 50px 40px 100px 40px;
+    }
+
+    .first_screen .center_line .center_line_content .tagline {
+        margin-right: 20px;
+    }
+
+    .first_screen .center_line .center_line_content {
+        margin: 50px 40px 100px 40px;
+    }
+
+    .first_screen .center_line {
+        width: 100%;
+        background: #282D2E url("../images/zwalls.ru-16005.png") no-repeat;
+        background-size: 550px 100%;
+    }
+
+    .first_screen .center_line header a {
+        margin: 0 10px 10px 10px;
+    }
+
+    .first_screen .center_line .header_menu a:first-child {
+        margin-right: 10px;
+    }
+
+    .first_screen .center_line .bottom_tagline {
+        flex-direction: column;
+        justify-content: start;
+        align-content: start;
+    }
+
+    .header_contact {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .first_screen .center_line .bottom_tagline h2 {
+        text-align: left;
+    }
+
+    .first_screen .center_line .center_line_content h1 {
+        letter-spacing: 0;
+        line-height: 1.6;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        margin: 30px 0;
+    }
+
+    .first_screen .center_line .bottom_tagline h2:first-child {
+        margin: 0 10px 0 0;
+    }
+
+    .first_screen .center_line .bottom_tagline h2 {
+        margin: 0 10px 0 0;
+    }
+
+    .first_screen .center_line .feedback h3 {
+        margin-top: 40px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 850px) {
+    .first_screen .center_line .center_line_content {
+        justify-content: center;
+    }
+
+    .first_screen .center_line {
+        width: 100%;
+        background: #282D2E url("../images/zwalls.ru-16005.png") no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .first_screen .center_line .center_line_content .tagline {
+        margin-top: 0;
+        margin-right: 0
+    }
+
+    .first_screen .center_line {
+        margin-top: 60px;
+        margin-left: 0;
+    }
+
+
+    .first_screen .center_line header {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .first_screen .center_line .center_line_content h1 {
+        letter-spacing: 0;
+        line-height: 1.6;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-size: 150%;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .first_screen {
+        flex-direction: column;
+    }
+
+    .first_screen .left_lane {
+        z-index: 999;
+        height: 60px;
+        width: 100vw;
+        max-width: 100vw;
+        flex-direction: row;
+        background: #DADDDE;
+    }
+
+    .first_screen .left_lane_bottom_icon {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+    .first_screen .left_lane .logo {
+        margin: 10px 20px;
+    }
+
+    .first_screen .left_lane .icon {
+        margin: 0;
+    }
+
+    .first_screen .center_line .bottom_tagline {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+/* endregion Обложка */
+
+/* region О проекте */
+.artboard {
+    width: 100%;
+    max-width: 1366px;
+    height: 100%;
+}
+
+.artboard .content {
+    margin: 30px 120px 110px 140px;
+}
+
+.artboard .content .content_header {
+    font-family: Roboto, sans-serif;
+    font-size: 74px;
+    font-weight: bold;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    text-align: right;
+    color: #535252;
+    opacity: 0.1;
+    margin: 0 20px -16px 0;
+    padding: 0;
+    z-index: -1;
+}
+
+.artboard .content .item {
+    width: 350px;
+    min-width: 350px;
+    background: #282D2E;
+    margin-right: 16px;
+    margin-bottom: 33px;
+}
+
+.artboard .content .items, .item {
+    z-index: 1;
+}
+
+.artboard .content .item .item_content {
+    margin: 50px 0 0 50px
+}
+
+.artboard .content .item .item_content .header {
+    width: 155px;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.artboard .content .item .menu {
+    font-family: Lato, serif;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.artboard .content .item .menu:hover {
+    color: #FFFFFF;
+}
+
+.artboard .content .item .item_image {
+    margin-top: 50px;
+    height: 300px;
+}
+
+.artboard .content .item .menu_image {
+    height: 150px;
+    margin-top: 125px;
+}
+
+.artboard .content .item .small_item_image {
+    margin-top: 55px;
+    height: 220px;
+}
+
+@media (max-width: 1366px) {
+    .artboard .content .content_header {
+        min-width: 200px;
+        text-align: center;
+        font-size: 400%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .artboard .content .item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .artboard .content {
+        margin: 30px 30px 110px 30px;
+    }
+
+    .artboard .content .content_header {
+        min-width: 200px;
+        text-align: center;
+        font-size: 200%;
+        margin: 0;
+    }
+
+    .artboard .content .item {
+        min-width: 200px;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: end;
+        margin-right: 0;
+    }
+
+    .artboard .content .item .item_content {
+        width: 90%;
+        margin: 20px 0 20px;
+    }
+
+    .artboard .content .item .item_image {
+        margin-top: -30px;
+    }
+
+    .artboard .content .item .menu_image {
+        margin-top: -30px;
+        margin-bottom: 50px;
+    }
+
+    .artboard .content .item .small_item_image {
+        margin-top: -50px;
+        margin-bottom: 20px;
+    }
+}
+
+/* endregion О проекте */
+
+/* region Шапка блоков */
+.top_content {
+    margin: 85px 140px 60px 140px;
+}
+
+.rectangle_header {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+}
+
+.rectangle {
+    width: 76px;
+    height: 7px;
+    margin-top: -15px;
+    background: #0196FF
+}
+
+.yellow {
+    background: #FFC729;
+}
+
+.rectangle_header h3 {
+    margin: 0 0 0 14px;
+    font-size: 36px;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
+.black_text {
+    color: #363636;
+}
+
+.right_header {
+    font-family: Roboto, sans-serif;
+    font-size: 74px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    text-align: right;
+    color: #818080;
+    margin: 0 16px 0 0;
+    padding: 0;
+    opacity: 0.1;
+}
+
+@media (max-width: 815px) {
+    .rectangle_header {
+        justify-content: center;
+    }
+
+    .rectangle_header h3 {
+        text-align: right;
+    }
+
+    .top_content {
+        margin: 85px 10px 60px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right_header {
+        text-align: center;
+        font-size: 300%;
+        margin: 20px 0 0 0;
+    }
+
+    .our_clients .center_content {
+        margin: 60px 20px 100px 20px;
+    }
+}
+
+/* endregion */
+
+/* region Партнеры */
+.our_clients, .comment, footer {
+    width: 100%;
+    background: #282D2E url("../images/zwalls.ru-16005.png") no-repeat;
+    background-size: cover;
+}
+
+.our_clients .center_content {
+    margin: 60px 200px 100px 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.our_clients .center_content .flex-center {
+    width: 100%;
+}
+
+.our_clients .center_content .flex {
+    width: 100%;
+}
+
+.our_clients .center_content .flex-center img {
+    margin: 0 30px;
+}
+
+.our_clients .center_content .row img:first-child {
+    margin: 0 30px 0 0;
+}
+
+.our_clients .center_content .row img:last-child {
+    margin: 0 0 0 30px;
+}
+
+.our_clients .center_content .row {
+    margin-bottom: 40px;
+}
+
+.our_clients .center_content .row:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 815px) {
+    .our_clients .center_content {
+        margin: 60px 20px 100px 20px;
+    }
+
+    .our_clients .center_content .flex-center img {
+        margin-bottom: 15px;
+    }
+}
+
+/* endregion */
+
+/* region Портфолио */
+.completed_work {
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.completed_work .category {
+    margin: 60px 100px 30px 140px;
+    max-width: 1075px;
+}
+
+.completed_work .category .active {
+    background: #0196FF;
+    color: #FFFFFF;
+}
+
+.completed_work .category button {
+    margin: 0 30px 30px 0;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-family: Lato, 'sans-serif';
+    border: none;
+    background: #F9F9F9;
+    cursor: pointer;
+}
+
+.completed_work .work_container {
+    margin: 60px 100px 30px 140px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.work_container img {
+    width: 260px;
+    height: 260px;
+    margin: 0 15px 30px 0;
+}
+
+.completed_work .work_container .row {
+    justify-content: center;
+}
+
+.completed_work .work_container .work {
+    margin: 0 15px 30px 0;
+    width: 260px;
+    height: 260px;
+    background: #EFEFEF;
+}
+
+.see_all {
+    padding: 28px 70px;
+    background: #0196FF;
+    color: #FFFFFF;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    border: none;
+}
+
+@media (max-width: 800px) {
+    .completed_work .category {
+        margin: 60px 20px 30px 20px;
+        text-align: center;
+    }
+
+    .completed_work .category button {
+        margin: 0 5px 10px 0;
+        padding: 5px 15px;
+    }
+
+    .completed_work .work_container {
+        margin: 60px 20px 30px 20px;
+    }
+
+    .completed_work .work_container .work {
+        margin: 5px;
+    }
+}
+
+/* endregion */
+
+/* region Отзывы*/
+.comment .comments {
+    margin: 60px 140px 30px 230px;
+    color: #FFFFFF;
+}
+
+.comment .comments .item {
+    margin: 0 100px 80px 0;
+    width: 40%;
+}
+
+.comment .comments .row .item:last-child {
+    margin: 0 0 80px 0;
+}
+
+.comment .comments .item h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.comment .comments .item .subheader {
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+}
+
+.comment .comments .item .content {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+}
+
+.comment .comments .item button {
+    margin-top: 30px;
+    font-family: Lato, sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    padding: 30px 65px;
+    transition: all 0.2s;
+}
+
+.comment .comments .item button:focus {
+    outline: 0 !important;
+}
+
+.comment .comments .item button:hover {
+    background: #0196FF;
+    border: 1px solid #0196FF;
+}
+
+@media (max-width: 1000px) {
+    .comment .comments .item {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .comment .comments .row .item:last-child {
+        margin: 0 0 80px 0;
+    }
+
+    .comment .comments {
+        margin: 60px 20px 30px 20px;
+    }
+
+    .comment .comments .item, .comment .comments .row .item:last-child {
+        margin: 40px 0 20px 0;
+    }
+
+    .comment .comments .item button {
+        padding: 15px 30px;
+    }
+}
+
+/* endregion */
+
+/* region Контакты */
+.contacts {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.contacts .contact_block {
+    margin: 60px 260px 30px 140px;
+}
+
+.contact_content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.contacts .contact_items {
+    margin: 0 0 0 90px;
+}
+
+.contacts .contact_items .header {
+    color: #707070;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 40px;
+    margin-bottom: 0;
+}
+
+.contacts .contact_items .row {
+    min-height: 40px;
+    margin-bottom: 30px;
+}
+
+.contacts .contact_items .column:first-child {
+    margin-right: 125px;
+}
+
+.contacts .contact_items .content {
+    color: #707070;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.contacts .contact_items .link {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    color: #0196FF;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contacts .map {
+    width: 598px;
+    height: 417px;
+    margin-right: 110px;
+}
+
+.contacts .feedback h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #363636;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.contacts .feedback input {
+    font-family: Lato, sans-serif;
+    border: none;
+    padding: 25px 35px;
+    text-align: center;
+    color: #5A5A5A;
+    font-size: 18px;
+    margin-bottom: 20px;
+    background: #EFEFEF;
+}
+
+.contacts .feedback p {
+    font-size: 14px;
+    color: #363636;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.contacts .feedback a {
+    font-size: 14px;
+    color: #363636;
+    margin-bottom: 20px;
+}
+
+.contacts .feedback button {
+    border: none;
+    font-size: 18px;
+    padding: 30px 60px;
+    color: #FFFFFF;
+    background: #0196FF;
+}
+
+.contacts .map_point {
+    position: absolute;
+    margin-left: -400px;
+    margin-top: 130px;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .contacts .contact_block {
+        margin: 60px 0 30px 0;
+    }
+
+    .contacts .contact_items .column:first-child {
+        margin-right: 0;
+    }
+
+    .contacts .contact_items {
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 0 0 10px;
+    }
+
+    .contacts .map {
+        margin: 0;
+        width: 100%;
+    }
+
+    .bottom_container {
+        flex-direction: column;
+    }
+
+    .contacts .feedback {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* endregion */
+
+/* region Футер */
+footer {
+    height: 200px;
+}
+
+.footer_content {
+    margin: 90px 160px 80px 160px
+}
+
+.footer_content p {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.footer_content a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: right;
+}
+
+@media (max-width: 850px) {
+    .footer_content {
+        margin: 90px 10px 0 10px;
+    }
+}
+
+/* endregion */
+
+#BusinessCardsImages, #CorporateIdentityImages, #FoodShootingImages, #LeafletsImages, #LogosImages, #PromotionalMaterialsImages, #EmptyBox {
+    display: none;
+}

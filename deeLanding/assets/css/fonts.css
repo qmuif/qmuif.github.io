@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Hairline'), local('Lato-Hairline'), url('../fonts/latohairline.woff2') format('woff2'), url('../fonts/latohairline.woff') format('woff'), url('../fonts/latohairline.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Thin'), local('Lato-Thin'), url('../fonts/latothin.woff2') format('woff2'), url('../fonts/latothin.woff') format('woff'), url('../fonts/latothin.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Light'), local('Lato-Light'), url('../fonts/latolight.woff2') format('woff2'), url('../fonts/latolight.woff') format('woff'), url('../fonts/latolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Regular'), local('Lato-Regular'), url('../fonts/latoregular.woff2') format('woff2'), url('../fonts/latoregular.woff') format('woff'), url('../fonts/latoregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Semibold'), local('Lato-Semibold'), url('../fonts/latosemibold.woff2') format('woff2'), url('../fonts/latosemibold.woff') format('woff'), url('../fonts/latosemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Bold'), local('Lato-Bold'), url('../fonts/latobold.woff2') format('woff2'), url('../fonts/latobold.woff') format('woff'), url('../fonts/latobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato Heavy'), local('Lato-Heavy'), url('../fonts/latoheavy.woff2') format('woff2'), url('../fonts/latoheavy.woff') format('woff'), url('../fonts/latoheavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
