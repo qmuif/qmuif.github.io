@@ -1,0 +1,397 @@
+@import "form"
+@import "helper"
+
+body
+  padding: 0
+  margin: 0
+  font-family: 'Roboto', sans-serif
+
+
+header
+  width: 80px
+  height: 100vh
+  position: fixed
+  background: #DADDDE
+  z-index: 999
+
+  .logo
+    width: 40px
+    height: 40px
+    margin: 40px 20px
+
+  .social_networks
+    margin: 0 25px 60px 25px
+
+    img
+      width: 30px
+      height: 30px
+      margin-bottom: 20px
+
+    img:last-child
+      margin-bottom: 0
+
+  @media only screen and (max-width: 576px)
+    width: 100vw
+    height: 60px
+
+    .logo
+      margin: 10px 20px
+
+    img
+      margin-top: 15px
+      margin-right: 20px
+
+
+main, footer
+  margin-left: 80px
+
+  @media only screen and (max-width: 576px)
+    margin-left: 0
+    margin-top: 60px
+
+
+.first_screen
+  background: #282D2E
+  min-height: 100vh
+
+  .left_block
+    padding-left: 60px !important
+    padding-right: 60px !important
+    background: url("../../assets/images/zwalls.ru-16005.png") no-repeat fixed, url("../../assets/images/icon.png") no-repeat right
+    background-size: cover, auto
+    min-height: 100vh
+    height: 100%
+
+    @media only screen and (max-width: 992px)
+      padding: 0 15px !important
+
+    nav
+      margin-top: 50px
+
+      a
+        color: #FFFFFF
+        opacity: 0.8
+        font-size: 16px
+        text-decoration: none
+        margin-right: 60px
+
+        @media only screen and (max-width: 576px)
+          margin-right: 0
+
+        @media only screen and (max-width: 996px)
+          margin-right: 10px
+          margin-bottom: 10px
+
+    .left_content
+      height: 100%
+
+    h1
+      color: #FFFFFF
+      letter-spacing: 0
+      font: Bold 40px/77px Roboto
+      text-transform: uppercase
+      margin-bottom: 10px
+      margin-top: 50px
+
+      @media only screen and (max-width: 992px)
+        font: Bold 32px/60px Roboto
+
+      @media only screen and (max-width: 576px)
+        font: Bold 25px/45px Roboto
+
+    .description
+      max-width: 600px
+      margin-bottom: 50px
+
+      h2
+        margin-right: 5px
+        font: 18px/22px 'Open Sans'
+        letter-spacing: 0
+        color: #707070
+
+        @media only screen and (max-width: 992px)
+          font: Bold 16px/22px Roboto
+          margin: 10px 10px 0 0
+
+  .right_block
+    padding-left: 40px
+    height: 100%
+
+    @media only screen and (max-width: 992px)
+      padding-left: 0
+      padding-bottom: 100px
+
+    address
+      margin-top: 50px
+
+      p, a
+        text-align: right
+        font: Bold 16px/19px Roboto
+        letter-spacing: 0
+        color: #FFFFFF
+        opacity: 0.8
+        margin: 0 60px 0 0
+        text-decoration: none
+
+        @media only screen and (max-width: 996px)
+          margin-right: 5px
+
+
+.offers
+  @extend %indent
+  min-height: 100vh
+
+  h3
+    text-align: right
+    font: Bold 72px/50px Roboto
+    letter-spacing: 1.8px
+    color: #535252
+    text-transform: uppercase
+    opacity: 0.1
+    margin: 0 7px 0 0
+
+    @media only screen and (max-width: 992px)
+      font: Bold 54px/50px Roboto
+      text-align: center
+
+    @media only screen and (max-width: 576px)
+      font: Bold 34px/50px Roboto
+
+  #websiteDevelopment
+    background: #282D2E url("../../assets/images/sites.png") no-repeat right center
+
+  #branding
+    background: #282D2E url("../../assets/images/brand.png") no-repeat right center
+
+  #photography
+    background: #282D2E url("../../assets/images/camera.png") no-repeat right top
+
+  #polygraphy
+    background: #282D2E url("../../assets/images/menu.png") no-repeat right center
+
+  #graphicDesign
+    background: #282D2E url("../../assets/images/sushi.png") no-repeat right top
+
+  #outdoorAdvertising
+    background: #282D2E url("../../assets/images/letters.png") no-repeat right center
+
+  .offer
+    width: 100%
+    height: 400px
+    background: #282D2E
+    margin-bottom: 20px
+    background-size: auto, auto
+
+    @media only screen and (max-width: 576px)
+      background-size: 100px, auto !important
+
+    h4
+      text-align: left
+      font: Bold 24px/30px Roboto
+      letter-spacing: 0
+      color: #FFFFFF
+      margin: 60px 0 30px 0
+
+    a
+      display: block
+      text-align: left
+      font: Regular 16px/30px Lato
+      letter-spacing: 0
+      color: #FFFFFF
+      text-decoration: none
+      margin-bottom: 20px
+
+      &:hover
+        color: #0196FF
+
+
+.company
+  width: 100%
+  min-height: 487px
+  background: #282D2E url("../../assets/images/zwalls.ru-16005.png") no-repeat
+  background-size: cover
+  @extend %indent
+
+  .logos
+    img
+      max-height: 64px
+      margin-bottom: 64px
+
+      @media only screen and (max-width: 576px)
+        max-height: 256px
+
+
+.works
+  min-height: 100vh
+  @extend %indent
+
+  .menu
+    button
+      padding: 13px 28px
+      text-align: left
+      font: 16px/19px 'Open Sans'
+      letter-spacing: 0
+      color: #363636
+      background: #F9F9F9 0 0 no-repeat padding-box
+      border: none
+      margin-right: 20px
+      margin-bottom: 30px
+
+      &:focus
+        outline: 0
+
+      @media only screen and (max-width: 992px)
+        font: 14px/19px 'Open Sans'
+        padding: 7px 14px
+        margin-right: 5px
+        margin-bottom: 15px
+
+
+  .gallery
+    margin-bottom: 100px
+
+    .box
+      width: 100%
+      height: 260px
+      background: #EFEFEF
+      padding: 0
+      margin-bottom: 30px
+      margin-right: 15px
+
+    button
+      padding: 30px 70px
+      text-align: center
+      background: #0196FF 0 0 no-repeat padding-box
+      border: none
+      font: 18px/22px 'Open Sans'
+      letter-spacing: 0
+      color: #FFFFFF
+
+
+.reviews
+  @extend %indent
+  min-height: 100vh
+  background: #282D2E url("../../assets/images/zwalls.ru-16005.png") no-repeat
+  background-size: cover
+
+
+  .comments
+
+    .comment
+      width: 100%
+      padding: 0 0 80px 0
+
+      h4
+        text-align: left
+        font: Bold 24px/28px Roboto
+        letter-spacing: 0.6px
+        color: #FFFFFF
+        margin: 0 0 20px 0
+
+      h5
+        text-align: left
+        font: 20px/24px 'Open Sans'
+        letter-spacing: 0.5px
+        color: #FFFFFF
+        margin: 0 0 20px 0
+
+      p
+        text-align: left
+        font: Regular 16px/19px Lato
+        letter-spacing: 0.4px
+        color: #FFFFFF
+        margin: 0 0 30px 0
+
+      button
+        background: inherit
+        border: 1px solid #FFFFFF
+        text-align: center
+        font: 18px/22px 'Open Sans'
+        letter-spacing: 0
+        color: #FFFFFF
+        padding: 28px 64px
+
+        &:focus
+          outline: 0
+
+        &:hover
+          background: #0196FF
+          padding: 29px 65px
+          border: none
+
+
+.feedback
+  @extend %indent
+  min-height: 100vh
+  margin-bottom: 100px
+
+  address
+    margin-bottom: 60px
+
+    .address_header
+      text-align: left
+      font: Bold 18px/22px 'Open Sans'
+      letter-spacing: 0
+      color: #707070
+
+    .address_value
+      text-align: left
+      font: 18px/22px 'Open Sans'
+      letter-spacing: 0
+      color: #707070
+
+    .address_link
+      text-align: left
+      font: Bold 18px/21px Roboto
+      letter-spacing: 0
+      color: #0196FF
+
+  .card
+    height: 417px
+    background: url("../../assets/images/map.png") center no-repeat
+    background-size: cover
+    margin-bottom: 20px
+
+  form
+    h3
+      color: #363636
+      margin: 0 0 40px 0
+
+    input
+      background: #EFEFEF 0 0 no-repeat padding-box
+      border: none
+
+    label
+      @media only screen and (max-width: 996px)
+        text-align: center
+
+    p, a
+      color: #363636
+
+    a
+      width: 100%
+      display: block
+
+      @media only screen and (max-width: 996px)
+        text-align: center
+
+
+footer
+  background: #282D2E url("../../assets/images/zwalls.ru-16005.png") no-repeat
+  background-size: cover
+  height: 200px
+  @extend %indent
+
+  p, a
+    text-align: left
+    font: 18px/22px 'Open Sans'
+    letter-spacing: 0
+    color: #FFFFFF
+    margin: 0 0 20px 0
+
+    @media only screen and (max-width: 576px)
+      text-align: center !important
+
+  a
+    text-align: right
+    text-decoration: none

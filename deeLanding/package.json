@@ -1,0 +1,14 @@
+{
+  "name": "dee-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w dev/sass -o assets/css --output-style compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
