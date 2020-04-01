@@ -2,7 +2,7 @@
 # Сергей Патлах
 Работы
 
-[Dee design](https://qmuif.github.io/deeLanding)
+[Лендинг дизайн студии](https://qmuif.github.io/deeLanding)
 
 
 Учебные проекты
